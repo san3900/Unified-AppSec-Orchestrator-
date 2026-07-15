@@ -1,0 +1,58 @@
+[
+    {
+        "title": "Possible SQL Injection",
+        "tool": "semgrep, sonarqube",
+        "category": "SAST",
+        "severity": "HIGH",
+        "description": "Semgrep detected possible SQL injection.",
+        "cwe": "CWE-89",
+        "cve": null,
+        "file_path": "src/db.py",
+        "line": 42,
+        "package_name": null,
+        "package_version": null,
+        "confidence": "HIGH"
+    },
+    {
+        "title": "Hardcoded Secret",
+        "tool": "semgrep",
+        "category": "SECRET",
+        "severity": "CRITICAL",
+        "description": "Semgrep detected a possible hardcoded secret.",
+        "cwe": "CWE-798",
+        "cve": null,
+        "file_path": "src/config.py",
+        "line": 10,
+        "package_name": null,
+        "package_version": null,
+        "confidence": "MEDIUM"
+    },
+    {
+        "title": "Vulnerable lodash dependency",
+        "tool": "trivy",
+        "category": "SCA",
+        "severity": "CRITICAL",
+        "description": "Trivy detected a vulnerable lodash dependency.",
+        "cwe": null,
+        "cve": "CVE-2021-23337",
+        "file_path": null,
+        "line": null,
+        "package_name": "lodash",
+        "package_version": "4.17.20",
+        "confidence": "MEDIUM"
+    },
+    {
+        "title": "Vulnerable minimist dependency",
+        "tool": "trivy",
+        "category": "SCA",
+        "severity": "HIGH",
+        "description": "Trivy detected a vulnerable minimist dependency.",
+        "cwe": null,
+        "cve": "CVE-2021-44906",
+        "file_path": null,
+        "line": null,
+        "package_name": "minimist",
+        "package_version": "1.2.5",
+        "confidence": "MEDIUM"
+    }
+]
