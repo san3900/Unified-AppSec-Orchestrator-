@@ -11,7 +11,7 @@ A Prototype AppSec orchestration platform that simulates multiple security scann
 - Policy actions: `BLOCK`, `WARN`, `ALLOW`
 - Terminal summary report
 - JSON report with summary and findings
-- CI/CD-style exit codes
+- CI/CD-style exit codes. 
 
 ## Run
 
